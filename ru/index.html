@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meta Qube — Компилятор стартапов и среда выполнения для эры ИИ. Превращайте идеи в структурированные, готовые к запуску и исполняемые стартап-системы из проверенных мета-модулей.">
+  <meta name="theme-color" content="#0080e8">
+  <title>Meta Qube — Компилятор и Runtime стартапов</title>
+
+  <link rel="alternate" hreflang="en" href="https://meta-qube.com/">
+  <link rel="alternate" hreflang="uk" href="https://meta-qube.com/ua/">
+  <link rel="alternate" hreflang="ru" href="https://meta-qube.com/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://meta-qube.com/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="/ru/" class="logo">
+        <img src="/images/metaqube.png" alt="" width="36" height="36">
+        Meta Qube
+      </a>
+      <nav class="lang-switch" aria-label="Язык">
+        <a href="/" class="lang-link" hreflang="en">EN</a>
+        <a href="/ua/" class="lang-link" hreflang="uk">UA</a>
+        <a href="/ru/" class="lang-link active" hreflang="ru" aria-current="page">RU</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#platform">Платформа</a>
+        <a href="#process">Как это работает</a>
+        <a href="#modules">Модули</a>
+        <a href="#start" class="nav-cta">Начать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Компилятор и Runtime стартапов</p>
+          <h1>Компилируй идеи.<br><span>Запускай стартапы.</span></h1>
+          <p class="hero-lead">
+            Meta Qube помогает основателям превратить идею в структурированную,
+            готовую к запуску и исполняемую стартап-систему — объединяя ИИ-агентов,
+            проверенные модули, экспертные знания и облачное выполнение в одной платформе.
+          </p>
+          <div class="hero-actions">
+            <a href="#start" class="btn btn-primary">Начать сборку</a>
+            <a href="#platform" class="btn btn-secondary">Изучить платформу</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-cube"
+            src="/images/metaqube.png"
+            alt="Meta Qube — модульная архитектура стартапа в виде воксельного куба-глобуса"
+            width="448"
+            height="448"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars" aria-label="Ключевые концепции">
+      <div class="container pillars-grid">
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Куб</div>
+          <div class="pillar-desc">Модульная архитектура стартапа</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"/>
+              <line x1="8" y1="12" x2="21" y2="12"/>
+              <line x1="8" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="3.01" y2="6"/>
+              <line x1="3" y1="12" x2="3.01" y2="12"/>
+              <line x1="3" y1="18" x2="3.01" y2="18"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Очередь</div>
+          <div class="pillar-desc">Задачи, процессы, агенты и операции</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Мета-модули</div>
+          <div class="pillar-desc">Проверенные блоки экспертных знаний</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Runtime</div>
+          <div class="pillar-desc">Выполнение бизнес-процессов в реальном времени</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Платформа</p>
+          <h2>Компилятор и Runtime вместе</h2>
+          <p>
+            Meta Qube компилирует идеи в стартап-системы и запускает первые
+            бизнес-процессы — от чертежа до живых операций.
+          </p>
+        </header>
+        <div class="platform-grid">
+          <article class="platform-card">
+            <div class="platform-badge">Компилятор стартапов</div>
+            <h3>От идеи к чертежу стартапа</h3>
+            <p>
+              Управляемый мастер классифицирует ваш стартап — что вы строите,
+              структуру владения, домен и модель запуска. Каждый ответ
+              выбирает совместимые модули. Компилятор собирает полный пакет стартапа.
+            </p>
+            <ul class="feature-list">
+              <li>Концепция, позиционирование и ценностное предложение</li>
+              <li>Структура продукта, объём MVP и бизнес-модель</li>
+              <li>Техническая архитектура и черновики юридических документов</li>
+              <li>Скрипт продаж, CRM-воронка и платёжный поток</li>
+              <li>Структура питч-дека и план валидации</li>
+              <li>Отчёт о рисках, чеклист запуска и панель метрик</li>
+            </ul>
+          </article>
+          <article class="platform-card">
+            <div class="platform-badge accent-green">Runtime стартапов</div>
+            <h3>От чертежа к живым операциям</h3>
+            <p>
+              Облачный исполнитель бизнес-процессов, запускающий скомпилированный стартап.
+              ИИ-агенты обрабатывают язык и решения. Детерминированные алгоритмы
+              управляют состоянием, биллингом и надёжностью. Вместе они ведут бизнес
+              с первого дня.
+            </p>
+            <ul class="feature-list">
+              <li>ИИ-агенты, процессы и очереди задач</li>
+              <li>CRM, платежи, формы и клиентский интерфейс</li>
+              <li>Уведомления, email и интеграции</li>
+              <li>Поддержка, онбординг и события биллинга</li>
+              <li>Рабочее пространство ментора и эскалация к экспертам</li>
+              <li>Панель метрик, журнал аудита и наблюдаемость</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Как это работает</p>
+          <h2>Управляемая сборка стартапа</h2>
+          <p>
+            Каждый ответ классифицирует стартап. Каждая классификация выбирает модули.
+            Каждый модуль добавляет структуру. Система компилирует ядро и готовит
+            исполняемые бизнес-процессы.
+          </p>
+        </header>
+        <div class="process-steps">
+          <div class="process-step">
+            <h3>Классифицировать</h3>
+            <p>
+              Начните с мастера: выберите, что создаёте, структуру владения,
+              домен и модель запуска. Сервис, продукт, платформа, маркетплейс,
+              агентство, софт, ИИ и другое.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Собрать</h3>
+            <p>
+              Совместимые мета-модули выбираются автоматически. Каждый модуль
+              содержит проверенные экспертные знания — входные данные, результаты,
+              ограничения и правила валидации.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Скомпилировать</h3>
+            <p>
+              Компилятор стартапов формирует полный чертёж: бизнес-модель,
+              структуру продукта, процессы, архитектуру, юридические черновики,
+              структуру питча и чеклист запуска.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Проверить</h3>
+            <p>
+              Агенты-верификаторы проверяют допущения, совместимость, риски
+              и осуществимость. Менторы и эксперты подключаются, когда
+              требуется человеческое решение.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Запустить</h3>
+            <p>
+              Runtime стартапов выполняет бизнес-процессы: привлечение лидов, продажи,
+              платежи, онбординг, поддержку и непрерывные операции — без
+              операционных пробелов.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Расти</h3>
+            <p>
+              Готовьтесь к питчу и привлечению средств. Развивайте модули, цены
+              и процессы, пока операции продолжаются. Обратная связь рынка
+              замыкает цикл.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Мета-модули</p>
+          <h2>Экспертные знания как переиспользуемая инфраструктура</h2>
+          <p>
+            Модули работают как элементы пазла — не как универсальные шаблоны.
+            Эксперты проверяют переиспользуемые блоки. ИИ-агенты собирают их
+            под конкретного основателя, команду, домен, продукт, рынок и цель запуска.
+          </p>
+        </header>
+        <div class="module-contract">
+          <div class="contract-item">
+            <span class="contract-key">Входной контракт</span>
+            <span class="contract-val">Чёткие требования на модуль</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Выходной контракт</span>
+            <span class="contract-val">Структурированные результаты</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Совместимость</span>
+            <span class="contract-val">Правила композиции</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Верификация</span>
+            <span class="contract-val">Статус проверки и тест-кейсы</span>
+          </div>
+        </div>
+        <div class="tag-cloud" aria-label="Типы модулей">
+          <span class="tag">Сегмент клиентов</span>
+          <span class="tag">Проблема и предложение</span>
+          <span class="tag">Ценообразование</span>
+          <span class="tag">Процесс продаж</span>
+          <span class="tag">Лендинг</span>
+          <span class="tag">Платёжный поток</span>
+          <span class="tag">CRM-воронка</span>
+          <span class="tag">Техническая архитектура</span>
+          <span class="tag">Юридические основы</span>
+          <span class="tag">Модель владения</span>
+          <span class="tag">Онбординг</span>
+          <span class="tag">Процесс поддержки</span>
+          <span class="tag">Метрики</span>
+          <span class="tag">Питч</span>
+          <span class="tag">Классификация рисков</span>
+          <span class="tag">План валидации</span>
+          <span class="tag">Софт-блок</span>
+          <span class="tag">Интеграция</span>
+          <span class="tag">Runtime-процесс</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Возможности</p>
+          <h2>Всё, что нужно стартапу для работы</h2>
+          <p>
+            ИИ даёт гибкость. Алгоритмы дают надёжность. Вместе они
+            выполняют бизнес-процессы контролируемо — с полной
+            наблюдаемостью и экспертным надзором, когда это важно.
+          </p>
+        </header>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V12h4a4 4 0 0 1 4 4v1H4v-1a4 4 0 0 1 4-4h4V9.5C10.8 8.8 10 7.5 10 6a4 4 0 0 1 4-4z"/>
+              </svg>
+            </div>
+            <h3>ИИ + детерминированное выполнение</h3>
+            <p>
+              ИИ-агенты обрабатывают язык, исследования, классификацию и генерацию
+              документов. Алгоритмы управляют валидацией, биллингом, планированием,
+              очередями и аудитом.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8"/>
+                <path d="M12 17v4"/>
+              </svg>
+            </div>
+            <h3>Готовые софт-блоки</h3>
+            <p>
+              Лендинги, CRM, платежи, бронирование, поддержка, чат-боты,
+              аналитика, генерация договоров и ролевой доступ — каждый с
+              конфигурацией, событиями и точками интеграции.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Слой интеграций</h3>
+            <p>
+              Подключайте платёжные провайдеры, email, мессенджеры, CRM, аналитику,
+              бухгалтерию, маркетинговые инструменты, API, вебхуки и хранилища данных
+              — с картой интеграций для вашего runtime.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Верификация и уровни риска</h3>
+            <p>
+              Агенты-верификаторы проверяют допущения, совместимость, юридические
+              риски и осуществимость. Низкорисковые проекты — самообслуживание.
+              Высокорисковые и регулируемые — с участием экспертов.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Эксперты и менторство</h3>
+            <p>
+              Эксперты проверяют переиспользуемые модули и подключаются к
+              конкретным кейсам по необходимости. Менторы помогают интерпретировать
+              пакет стартапа, улучшить позиционирование, проверить допущения
+              и подготовиться к питчу.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Непрерывные операции</h3>
+            <p>
+              Развивайте продукт, цены, процессы и интеграции, пока
+              операции продолжаются. Версионные модули, feature flags, канареечный
+              rollout и автоматический откат — без операционных пробелов.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="formula">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Принцип</p>
+          <h2>Инфраструктура стартапов для эры ИИ</h2>
+          <p>
+            Мы классифицируем идеи стартапов, собираем проверенные модули, компилируем
+            структуры, генерируем бизнес-процессы, запускаем операционные процессы
+            и связываем основателей с менторами и экспертами — превращая
+            экспертные знания в переиспользуемую инфраструктуру стартапов.
+          </p>
+        </header>
+        <div class="formula-box">
+          <code class="formula-code">Стартап = Классификация + Проверенные модули + Правила композиции + Верификация + Менторство + Эскалация к экспертам + Runtime стартапов + Непрерывные операции + Обратная связь рынка</code>
+          <p class="formula-tagline">Meta Qube компилирует и запускает стартапы из мета-модулей.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="start">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Превратите идею в стартап-систему</h2>
+          <p>
+            Начните с управляемого мастера. Получите скомпилированный чертёж,
+            исполняемые бизнес-процессы и runtime, готовый к запуску. Расскажите,
+            что вы строите.
+          </p>
+          <a href="mailto:hello@meta-qube.com" class="btn btn-primary">hello@meta-qube.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/images/metaqube.png" alt="" width="24" height="24">
+        <span>&copy; 2026 Meta Qube. Все права защищены.</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@meta-qube.com">Контакт</a>
+        <a href="#platform">Платформа</a>
+        <a href="#start">Начать</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    menuToggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open);
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>

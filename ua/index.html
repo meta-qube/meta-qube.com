@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meta Qube — Компілятор стартапів і середовище виконання для ери ШІ. Перетворюйте ідеї на структуровані, готові до запуску та виконувані стартап-системи з перевірених мета-модулів.">
+  <meta name="theme-color" content="#0080e8">
+  <title>Meta Qube — Компілятор і Runtime стартапів</title>
+
+  <link rel="alternate" hreflang="en" href="https://meta-qube.com/">
+  <link rel="alternate" hreflang="uk" href="https://meta-qube.com/ua/">
+  <link rel="alternate" hreflang="ru" href="https://meta-qube.com/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://meta-qube.com/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="/ua/" class="logo">
+        <img src="/images/metaqube.png" alt="" width="36" height="36">
+        Meta Qube
+      </a>
+      <nav class="lang-switch" aria-label="Мова">
+        <a href="/" class="lang-link" hreflang="en">EN</a>
+        <a href="/ua/" class="lang-link active" hreflang="uk" aria-current="page">UA</a>
+        <a href="/ru/" class="lang-link" hreflang="ru">RU</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Відкрити меню" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#platform">Платформа</a>
+        <a href="#process">Як це працює</a>
+        <a href="#modules">Модулі</a>
+        <a href="#start" class="nav-cta">Почати</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Компілятор і Runtime стартапів</p>
+          <h1>Компілюй ідеї.<br><span>Запускай стартапи.</span></h1>
+          <p class="hero-lead">
+            Meta Qube допомагає засновникам перетворити ідею на структуровану,
+            готову до запуску та виконувану стартап-систему — поєднуючи ШІ-агентів,
+            перевірені модулі, експертні знання та хмарне виконання в одній платформі.
+          </p>
+          <div class="hero-actions">
+            <a href="#start" class="btn btn-primary">Почати збірку</a>
+            <a href="#platform" class="btn btn-secondary">Дослідити платформу</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-cube"
+            src="/images/metaqube.png"
+            alt="Meta Qube — модульна архітектура стартапу у вигляді воксельного куба-глобуса"
+            width="448"
+            height="448"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars" aria-label="Ключові концепції">
+      <div class="container pillars-grid">
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Куб</div>
+          <div class="pillar-desc">Модульна архітектура стартапу</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"/>
+              <line x1="8" y1="12" x2="21" y2="12"/>
+              <line x1="8" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="3.01" y2="6"/>
+              <line x1="3" y1="12" x2="3.01" y2="12"/>
+              <line x1="3" y1="18" x2="3.01" y2="18"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Черга</div>
+          <div class="pillar-desc">Завдання, процеси, агенти та операції</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Мета-модулі</div>
+          <div class="pillar-desc">Перевірені блоки експертних знань</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <div class="pillar-label">Runtime</div>
+          <div class="pillar-desc">Виконання бізнес-процесів у реальному часі</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Платформа</p>
+          <h2>Компілятор і Runtime разом</h2>
+          <p>
+            Meta Qube компілює ідеї в стартап-системи та запускає перші
+            бізнес-процеси — від креслення до живих операцій.
+          </p>
+        </header>
+        <div class="platform-grid">
+          <article class="platform-card">
+            <div class="platform-badge">Компілятор стартапів</div>
+            <h3>Від ідеї до креслення стартапу</h3>
+            <p>
+              Керований майстер класифікує ваш стартап — що ви будуєте,
+              структуру власності, домен і модель запуску. Кожна відповідь
+              обирає сумісні модулі. Компілятор збирає повний пакет стартапу.
+            </p>
+            <ul class="feature-list">
+              <li>Концепція, позиціонування та ціннісна пропозиція</li>
+              <li>Структура продукту, обсяг MVP та бізнес-модель</li>
+              <li>Технічна архітектура та чернетки юридичних документів</li>
+              <li>Скрипт продажів, CRM-воронка та платіжний потік</li>
+              <li>Структура пітч-деку та план валідації</li>
+              <li>Звіт про ризики, чеклист запуску та панель метрик</li>
+            </ul>
+          </article>
+          <article class="platform-card">
+            <div class="platform-badge accent-green">Runtime стартапів</div>
+            <h3>Від креслення до живих операцій</h3>
+            <p>
+              Хмарний виконавець бізнес-процесів, що запускає скомпільований стартап.
+              ШІ-агенти обробляють мову та рішення. Детерміновані алгоритми
+              керують станом, білінгом і надійністю. Разом вони ведуть бізнес
+              з першого дня.
+            </p>
+            <ul class="feature-list">
+              <li>ШІ-агенти, процеси та черги завдань</li>
+              <li>CRM, платежі, форми та клієнтський інтерфейс</li>
+              <li>Сповіщення, email та інтеграції</li>
+              <li>Підтримка, онбординг та події білінгу</li>
+              <li>Робочий простір ментора та ескалація до експертів</li>
+              <li>Панель метрик, журнал аудиту та спостережність</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Як це працює</p>
+          <h2>Керована збірка стартапу</h2>
+          <p>
+            Кожна відповідь класифікує стартап. Кожна класифікація обирає модулі.
+            Кожен модуль додає структуру. Система компілює ядро та готує
+            виконувані бізнес-процеси.
+          </p>
+        </header>
+        <div class="process-steps">
+          <div class="process-step">
+            <h3>Класифікувати</h3>
+            <p>
+              Почніть з майстра: оберіть, що створюєте, структуру власності,
+              домен і модель запуску. Сервіс, продукт, платформа, маркетплейс,
+              агентство, софт, ШІ та інше.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Зібрати</h3>
+            <p>
+              Сумісні мета-модулі обираються автоматично. Кожен модуль
+              містить перевірені експертні знання — вхідні дані, результати,
+              обмеження та правила валідації.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Скомпілювати</h3>
+            <p>
+              Компілятор стартапів формує повне креслення: бізнес-модель,
+              структуру продукту, процеси, архітектуру, юридичні чернетки,
+              структуру пітчу та чеклист запуску.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Перевірити</h3>
+            <p>
+              Агенти-верифікатори перевіряють припущення, сумісність, ризики
+              та здійсненність. Ментори та експерти підключаються, коли
+              потрібне людське рішення.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Запустити</h3>
+            <p>
+              Runtime стартапів виконує бізнес-процеси: залучення лідів, продажі,
+              платежі, онбординг, підтримку та безперервні операції — без
+              операційних прогалин.
+            </p>
+          </div>
+          <div class="process-step">
+            <h3>Зростати</h3>
+            <p>
+              Готуйтеся до пітчу та залучення коштів. Розвивайте модулі, ціни
+              та процеси, поки операції тривають. Зворотний зв'язок ринку
+              замикає цикл.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Мета-модулі</p>
+          <h2>Експертні знання як багаторазова інфраструктура</h2>
+          <p>
+            Модулі працюють як елементи пазла — не як універсальні шаблони.
+            Експерти перевіряють багаторазові блоки. ШІ-агенти збирають їх
+            під конкретного засновника, команду, домен, продукт, ринок і ціль запуску.
+          </p>
+        </header>
+        <div class="module-contract">
+          <div class="contract-item">
+            <span class="contract-key">Вхідний контракт</span>
+            <span class="contract-val">Чіткі вимоги на модуль</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Вихідний контракт</span>
+            <span class="contract-val">Структуровані результати</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Сумісність</span>
+            <span class="contract-val">Правила композиції</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Верифікація</span>
+            <span class="contract-val">Статус перевірки та тест-кейси</span>
+          </div>
+        </div>
+        <div class="tag-cloud" aria-label="Типи модулів">
+          <span class="tag">Сегмент клієнтів</span>
+          <span class="tag">Проблема та пропозиція</span>
+          <span class="tag">Ціноутворення</span>
+          <span class="tag">Процес продажів</span>
+          <span class="tag">Лендінг</span>
+          <span class="tag">Платіжний потік</span>
+          <span class="tag">CRM-воронка</span>
+          <span class="tag">Технічна архітектура</span>
+          <span class="tag">Юридичні основи</span>
+          <span class="tag">Модель власності</span>
+          <span class="tag">Онбординг</span>
+          <span class="tag">Процес підтримки</span>
+          <span class="tag">Метрики</span>
+          <span class="tag">Пітч</span>
+          <span class="tag">Класифікація ризиків</span>
+          <span class="tag">План валідації</span>
+          <span class="tag">Софт-блок</span>
+          <span class="tag">Інтеграція</span>
+          <span class="tag">Runtime-процес</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Можливості</p>
+          <h2>Все, що потрібно стартапу для роботи</h2>
+          <p>
+            ШІ дає гнучкість. Алгоритми дають надійність. Разом вони
+            виконують бізнес-процеси контрольовано — з повною
+            спостережністю та експертним наглядом, коли це важливо.
+          </p>
+        </header>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V12h4a4 4 0 0 1 4 4v1H4v-1a4 4 0 0 1 4-4h4V9.5C10.8 8.8 10 7.5 10 6a4 4 0 0 1 4-4z"/>
+              </svg>
+            </div>
+            <h3>ШІ + детерміноване виконання</h3>
+            <p>
+              ШІ-агенти обробляють мову, дослідження, класифікацію та генерацію
+              документів. Алгоритми керують валідацією, білінгом, плануванням,
+              чергами та аудитом.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8"/>
+                <path d="M12 17v4"/>
+              </svg>
+            </div>
+            <h3>Готові софт-блоки</h3>
+            <p>
+              Лендінги, CRM, платежі, бронювання, підтримка, чат-боти,
+              аналітика, генерація договорів та рольовий доступ — кожен з
+              конфігурацією, подіями та точками інтеграції.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Шар інтеграцій</h3>
+            <p>
+              Підключайте платіжні провайдери, email, месенджери, CRM, аналітику,
+              бухгалтерію, маркетингові інструменти, API, вебхуки та сховища даних
+              — з картою інтеграцій для вашого runtime.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Верифікація та рівні ризику</h3>
+            <p>
+              Агенти-верифікатори перевіряють припущення, сумісність, юридичні
+              ризики та здійсненність. Низькоризикові проєкти — самообслуговування.
+              Високоризикові та регульовані — з участю експертів.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Експерти та менторство</h3>
+            <p>
+              Експерти перевіряють багаторазові модулі та підключаються до
+              конкретних кейсів за потреби. Ментори допомагають інтерпретувати
+              пакет стартапу, покращити позиціонування, перевірити припущення
+              та підготуватися до пітчу.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Безперервні операції</h3>
+            <p>
+              Розвивайте продукт, ціни, процеси та інтеграції, поки
+              операції тривають. Версійні модулі, feature flags, канарейковий
+              rollout та автоматичний відкат — без операційних прогалин.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="formula">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Принцип</p>
+          <h2>Інфраструктура стартапів для ери ШІ</h2>
+          <p>
+            Ми класифікуємо ідеї стартапів, збираємо перевірені модулі, компілюємо
+            структури, генеруємо бізнес-процеси, запускаємо операційні процеси
+            та з'єднуємо засновників з менторами та експертами — перетворюючи
+            експертні знання на багаторазову інфраструктуру стартапів.
+          </p>
+        </header>
+        <div class="formula-box">
+          <code class="formula-code">Стартап = Класифікація + Перевірені модулі + Правила композиції + Верифікація + Менторство + Ескалація до експертів + Runtime стартапів + Безперервні операції + Зворотний зв'язок ринку</code>
+          <p class="formula-tagline">Meta Qube компілює та запускає стартапи з мета-модулів.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="start">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Перетворіть ідею на стартап-систему</h2>
+          <p>
+            Почніть з керованого майстра. Отримайте скомпільоване креслення,
+            виконувані бізнес-процеси та runtime, готовий до запуску. Розкажіть,
+            що ви будуєте.
+          </p>
+          <a href="mailto:hello@meta-qube.com" class="btn btn-primary">hello@meta-qube.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/images/metaqube.png" alt="" width="24" height="24">
+        <span>&copy; 2026 Meta Qube. Усі права захищено.</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@meta-qube.com">Контакт</a>
+        <a href="#platform">Платформа</a>
+        <a href="#start">Почати</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    menuToggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open);
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
