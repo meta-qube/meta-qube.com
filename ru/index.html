@@ -26,6 +26,7 @@
 <body>
   <header class="site-header" id="header">
     <div class="container header-inner">
+      <div class="header-top">
       <a href="/ru/" class="logo">
         <img src="/images/metaqube.png" alt="" width="36" height="36">
         Meta Qube
@@ -42,11 +43,12 @@
           <line x1="4" y1="17" x2="20" y2="17"/>
         </svg>
       </button>
+      </div>
       <nav class="nav" id="nav">
+        <a href="#deficits">Почему сейчас</a>
         <a href="#platform">Платформа</a>
         <a href="#process">Как это работает</a>
         <a href="#modules">Модули</a>
-        <a href="#start" class="nav-cta">Начать</a>
       </nav>
     </div>
   </header>
@@ -60,7 +62,7 @@
       <div class="container hero-inner">
         <div class="hero-content">
           <p class="eyebrow">Компилятор стартапов и Operations Runtime</p>
-          <h1>Компилируй идеи.<br><span>Запускай операции.</span></h1>
+          <h1><span class="hero-line">Компилируй идеи</span><span class="hero-line hero-line-accent">Запускай операции</span></h1>
           <p class="hero-lead">
             Meta Qube — Компилятор стартапов и Operations Runtime для эры ИИ.
             Мы помогаем основателям превращать идеи в структурированные,
@@ -131,6 +133,40 @@
       </div>
     </section>
 
+    <section id="deficits">
+      <div class="container">
+        <header class="section-header centered">
+          <p class="section-tag">Почему сейчас</p>
+          <h2>Четыре дефицита, одна платформа</h2>
+          <p>
+            С ИИ стало возможно делать стартапы малыми силами. Meta Qube
+            соединяет четыре дефицита рынка в одну систему: разработчиков,
+            которым нужна практика, основателей, которым нужна инженерия,
+            инвесторов, которым нужно доверие, и экспертов, чьи знания не
+            масштабируются.
+          </p>
+        </header>
+        <div class="module-contract">
+          <div class="contract-item">
+            <span class="contract-key">Дефицит практики</span>
+            <span class="contract-val">Разработчики без способа доказать себя</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Дефицит инженерии</span>
+            <span class="contract-val">Основатели без инженерной команды</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Дефицит доверия</span>
+            <span class="contract-val">Инвесторы среди нейрослопа</span>
+          </div>
+          <div class="contract-item">
+            <span class="contract-key">Дефицит времени</span>
+            <span class="contract-val">Эксперты, чьи знания не масштабируются</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="platform">
       <div class="container">
         <header class="section-header centered">
@@ -155,6 +191,7 @@
               <li>Входные данные, результаты, ограничения и правила совместимости</li>
               <li>Теги риска, версия, владелец и статус проверки</li>
               <li>Логика верификации для каждого модуля</li>
+              <li>~80% функций стартапа повторяются — переиспользование стоит на 20–30% дороже, а не вдвое</li>
             </ul>
           </article>
           <article class="platform-card">
@@ -183,6 +220,7 @@
               <li>Привлечение лидов, квалификация клиентов и запись на демо</li>
               <li>Приём платежей, онбординг и обработка поддержки</li>
               <li>Отчёты, обновление CRM и подготовка апдейтов для инвесторов</li>
+              <li>PWA, local-first доставка и общая инфраструктура безопасности</li>
             </ul>
           </article>
           <article class="platform-card">
@@ -491,6 +529,7 @@
       <div class="footer-links">
         <a href="https://founders.meta-qube.com/ru/">Для основателей</a>
         <a href="https://capital.meta-qube.com/ru/">Для инвесторов</a>
+        <a href="https://platform.meta-qube.com/ru/">Техническая платформа</a>
         <a href="mailto:timur@metarhia.com">Контакт</a>
         <a href="#platform">Платформа</a>
         <a href="#start">Начать</a>
